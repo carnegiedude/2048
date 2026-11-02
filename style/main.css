@@ -2,13 +2,19 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
+  background-color: #2f356f;
+  background-image: url("../assets/city-skyline-dusk-16bit.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
 body {
-  margin: 80px 0; }
+  margin: 80px 0;
+  min-height: calc(100vh - 160px); }
 
 .heading:after {
   content: "";
@@ -117,7 +123,14 @@ hr {
 
 .container {
   width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 32px;
+  background: rgba(250, 248, 239, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(19, 22, 60, 0.35);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px); }
 
 @-webkit-keyframes fade-in {
   0% {
@@ -539,7 +552,9 @@ hr {
 
   body {
     margin: 20px 0;
-    padding: 0 20px; }
+    padding: 0;
+    min-height: calc(100vh - 40px);
+    background-attachment: scroll; }
 
   h1.title {
     font-size: 27px;
@@ -547,7 +562,9 @@ hr {
 
   .container {
     width: 280px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 9px; }
 
   .score-container, .best-container {
     margin-top: 0;
