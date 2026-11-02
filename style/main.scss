@@ -25,7 +25,12 @@ html, body {
   margin: 0;
   padding: 0;
 
-  background: #faf8ef;
+  background-color: #2f356f;
+  background-image: url("../assets/city-skyline-dusk-16bit.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: $text-color;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
@@ -33,6 +38,7 @@ html, body {
 
 body {
   margin: 80px 0;
+  min-height: calc(100vh - 160px);
 }
 
 .heading {
@@ -143,6 +149,13 @@ hr {
 .container {
   width: $field-width;
   margin: 0 auto;
+  padding: 32px;
+  background: rgba(250, 248, 239, .9);
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(19, 22, 60, .35);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 
 @include keyframes(fade-in) {
@@ -487,7 +500,9 @@ hr {
 
   body {
     margin: 20px 0;
-    padding: 0 20px;
+    padding: 0;
+    min-height: calc(100vh - 40px);
+    background-attachment: scroll;
   }
 
   h1.title {
@@ -498,6 +513,8 @@ hr {
   .container {
     width: $field-width;
     margin: 0 auto;
+    padding: 16px;
+    border-radius: 9px;
   }
 
   .score-container, .best-container {
